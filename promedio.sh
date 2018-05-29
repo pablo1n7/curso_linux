@@ -6,4 +6,4 @@ do
 	suma=`expr $suma + $a`
 done
 
-expr $suma / $#
+echo "scale=2;$suma/$#" | bc
